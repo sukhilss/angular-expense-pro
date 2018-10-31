@@ -1,0 +1,27 @@
+<nav class="etp-navbar-header">
+  <a mat-button class="etp-button" routerLink="/" aria-label="Expense Tracker">
+    <fa name="pie-chart"></fa>&nbsp;&nbsp;
+    <span>Expense Tracker</span>
+  </a>
+  <div class="flex-spacer"></div>
+  <a mat-button class="etp-button" routerLink="/" aria-label="Dashboard">
+    <span>Dashboard</span>
+  </a>
+  <a mat-button class="etp-button" routerLink="/" aria-label="Dashboard">
+    <span>Tracker</span>
+  </a>
+  <a mat-button class="etp-button" routerLink="/" aria-label="Accounts">
+    <span>Accounts</span>
+  </a>
+  <a mat-button class="etp-button" routerLink="/" aria-label="Categories">
+    <span>Categories</span>
+  </a>
+  <button mat-button class="etp-button" [matMenuTriggerFor]="menu">
+    Account
+    <fa name="angle-down"></fa>
+  </button>
+  <mat-menu #menu="matMenu">
+    <a mat-menu-item><fa name="cog"></fa> Settings</a>
+    <a mat-menu-item><fa name="pie-chart"></fa> Logout</a>
+  </mat-menu>
+</nav>
